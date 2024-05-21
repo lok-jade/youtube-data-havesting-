@@ -23,8 +23,8 @@ Clone the repository
 
 bash
 Copy code
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/lok-jade/youtube-data-havesting-
+cd youtube-data-havesting-
 Set up a virtual environment
 
 bash
@@ -35,7 +35,8 @@ Install the required dependencies
 
 bash
 Copy code
-pip install -r requirements.txt
+pip install pymongo,psycopg2
+
 Set up MongoDB and PostgreSQL
 
 Ensure MongoDB and PostgreSQL are installed and running on your local machine or server.
@@ -49,27 +50,27 @@ Scrape YouTube Data
 Modify and run the script to scrape data from YouTube and store it in MongoDB.
 python
 Copy code
-python youtube_scrape.py
+python data.py
 Transfer Data to PostgreSQL
 
 Run the script to transfer data from MongoDB to PostgreSQL.
 python
 Copy code
-python transfer_to_postgres.py
+python data.py
 Run the Streamlit App
 
 Start the Streamlit app to visualize the data.
 bash
 Copy code
-streamlit run app.py
+streamlit run data.py
 Project Structure
 lua
 Copy code
 |-- README.md
 |-- requirements.txt
-|-- youtube_scrape.py          # Script for scraping YouTube data
-|-- transfer_to_postgres.py    # Script for transferring data to PostgreSQL
-|-- app.py                     # Streamlit app script
+|-- data.py          # Script for scraping YouTube data
+|-- data.py    # Script for transferring data to PostgreSQL
+|-- data.py                     # Streamlit app script
 Technologies Used
 Python: The primary programming language used for this project.
 pandas: Data manipulation and analysis.
